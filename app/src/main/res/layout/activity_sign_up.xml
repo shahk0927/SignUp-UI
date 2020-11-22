@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/signupbg"
+      tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:id="@+id/titleLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="145dp"
+        android:orientation="horizontal"
+        >
+      <TextView
+          android:id="@+id/loginTitleS"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/login"
+          android:layout_marginStart="5dp"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:focusable="true"
+          android:textColor="@color/colorWhite"
+          android:layout_marginBottom="5dp"
+          android:clickable="true"
+          android:layout_marginTop="10dp"
+          android:textSize="30sp"
+          android:layout_gravity="center"
+          />
+
+      <TextView
+          android:id="@+id/slash"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/slash"
+          android:layout_gravity="center"
+          android:layout_weight=".5"
+          android:gravity="center"
+          android:textColor="@color/colorSignUp"
+          android:textSize="60sp" />
+
+      <TextView
+          android:id="@+id/tvCreateAccount"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:layout_marginEnd="30dp"
+          android:text="@string/sign_up"
+          android:layout_gravity="center"
+          android:textColor="@color/colorSignUp"
+          android:textSize="60dp"
+          android:layout_weight="1"
+          />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/nameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/person_name"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@id/titleLL"
+        android:padding="20dp"
+        android:textSize="25sp"
+        android:fontFamily="@font/roboto"
+        android:background="@drawable/editdesign"
+        android:drawableStart="@drawable/person"
+        android:drawablePadding="10dp"
+        android:defaultFocusHighlightEnabled="false"
+        android:inputType="textEmailAddress"
+        android:outlineSpotShadowColor="@color/colorWhite"
+        android:textColor="#ffffff"
+        android:textColorHighlight="#FCF1E8E8"
+        android:textColorHint="@color/colorWhite"
+        />
+
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameEt"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/editdesign"
+        android:defaultFocusHighlightEnabled="false"
+        android:drawableStart="@drawable/email"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/emailhint"
+        android:inputType="textEmailAddress"
+        android:outlineSpotShadowColor="@color/colorWhite"
+        android:padding="20dp"
+        android:textColor="#ffffff"
+        android:textColorHighlight="#FCF1E8E8"
+        android:textColorHint="@color/colorWhite"
+        android:textSize="25sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_show_hide_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailET"
+        app:hintEnabled="false"
+        android:layout_marginTop="10dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorWhite">
+
+      <EditText
+          android:id="@+id/passwordET"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="25dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginEnd="25dp"
+          android:background="@drawable/editdesign"
+          android:drawableStart="@drawable/password"
+          android:drawablePadding="10dp"
+          android:fontFamily="@font/roboto"
+          android:layout_gravity="center_vertical"
+          android:hint="@string/password"
+          android:inputType="textPassword"
+          android:outlineSpotShadowColor="@color/colorWhite"
+          android:padding="20dp"
+          android:textColor="#ffffff"
+          android:textColorHighlight="#FCF1E8E8"
+          android:textColorHint="@color/colorWhite"
+          android:textSize="25sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvOR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_show_hide_login"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/or"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvSigninwith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvOR"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sign_in_with"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/llsign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/tvSigninwith">
+
+      <ImageButton
+
+          android:id="@+id/googleib"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_marginEnd="5dp"
+          android:backgroundTint="@android:color/white"
+          android:src="@drawable/google" />
+
+      <ImageButton
+          android:id="@+id/facebookIB"
+          android:backgroundTint="@android:color/white"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:src="@drawable/facebook" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvNext"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="bottom"
+        android:layout_below="@id/llsign"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btndesign"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:focusable="true"
+        app:drawableStartCompat="@drawable/ic_baseline_arrow_forward_24" />
+
+
+  </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

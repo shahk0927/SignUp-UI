@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SignUpUI</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="person_name">Abc</string>
+    <string name="emailhint">abc@mail.com</string>
+    <string name="password">********1</string>
+    <string name="or">OR</string>
+    <string name="sign_in_with">Sign in with</string>
+    <string name="welcome_to_fitx">Welcome to FitX</string>
+    <string name="lets_start_your_journey">Lets Start Your Journey</string>
+    <string name="login">Login</string>
+    <string name="signup">SignUp</string>
+    <string name="slash">|</string>
+</resources>

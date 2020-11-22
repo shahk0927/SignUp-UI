@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorStartBtn">#FF00FF</color>
+    <color name="colorEndBtn">#674FDF</color>
+    <color name="colorStartArr">#FFFFFF</color>
+    <color name="colorEndArr">#08CDC6</color>
+    <color name="colorStartLBtn">#4300FF</color>
+    <color name="colorEndLBtn">#00FFF9</color>
+    <color name="colorEndSUBtn">#DF00F8</color>
+    <color name="colorStartSUBtn">#FEBA00</color>
+    <color name="colorLogin">#00F9E9</color>
+    <color name="colorSignUp">#CEF900</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="GradientStrokeBorder">
+        <item name="android:startColor">#FFFFFF</item>
+        <item name="android:endColor">#08CDC6</item>
+        <item name="android:angle">45</item>
+    </color>
+</resources>
